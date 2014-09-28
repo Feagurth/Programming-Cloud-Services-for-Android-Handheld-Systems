@@ -248,9 +248,12 @@ public class VideoSvcController {
 			// Y copiamos la información del video al flujo de respuesta
 			serveSomeVideo(v, response);
 		} else {
+
 			// Si no existe, asignamos el valor correspondiente a la respuesta
 			// del procedimiento
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+
 		}
 	}
+
 }

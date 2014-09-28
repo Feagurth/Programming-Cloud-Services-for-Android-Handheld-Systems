@@ -199,12 +199,11 @@ public class VideoSvcController {
 
 		// Creamos un objeto VideoFileManager
 		videoDataMgr = VideoFileManager.get();
-
+		
 		// Cambiamos el estado del video a procesando
 		VideoStatus state = new VideoStatus(VideoState.PROCESSING);
 
-		// Si existe un objeto video almacenado que corresponde con el id
-		// especificado
+		// Si existe un objeto video almacenado que corresponde con el id especificado
 		if (videos.get(id) != null) {
 			// Almacenamos la información del video en el mismo
 			saveSomeVideo(videos.get(id), videoData);
@@ -213,44 +212,26 @@ public class VideoSvcController {
 			state.setState(VideoStatus.VideoState.READY);
 
 		} else {
-			// Si no existe, asignamos el valor correspondiente a la respuesta
-			// del procedimiento
+			// Si no existe, asignamos el valor correspondiente a la respuesta del procedimiento
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
 		}
 
-		// Devolvemos el estado del video
 		return state;
 	}
 
-	/**
-	 * Método que nos permite recuperar la información de video un video
-	 * específico
-	 * 
-	 * @param id
-	 *            Identificador del video
-	 * @param response
-	 *            Respuesta de la petición
-	 * @throws IOException
-	 *             Excepción
-	 */
 	@Streaming
 	@RequestMapping(value = VideoSvcApi.VIDEO_DATA_PATH, method = RequestMethod.GET)
 	public @ResponseBody
 	void getData(@PathVariable("id") long id, HttpServletResponse response)
 			throws IOException {
 
-		// Comprobamos si existe un video con el identificador expecificado
 		if (videos.get(id) != null) {
-
-			// Si existe, lo recuperamos
 			Video v = videos.get(id);
-
-			// Y copiamos la información del video al flujo de respuesta
 			serveSomeVideo(v, response);
 		} else {
-			// Si no existe, asignamos el valor correspondiente a la respuesta
-			// del procedimiento
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+
 		}
 	}
+
 }

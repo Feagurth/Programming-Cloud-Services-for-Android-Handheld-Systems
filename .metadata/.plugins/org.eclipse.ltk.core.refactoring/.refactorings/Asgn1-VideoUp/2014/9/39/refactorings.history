@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;Asgn1-VideoUp&apos;&#x0D;&#x0A;- Original project: &apos;Asgn1-VideoUp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Asgn1.3ade3fd5-5e34-46be-800f-ff0d1b252269.zip&#x0D;&#x0A;     Asgn1.c274a587-bbca-4224-ba98-a6cf9d72306f.zip" description="Delete elements" element1="coursera-submission/Asgn1.3ade3fd5-5e34-46be-800f-ff0d1b252269.zip" element2="coursera-submission/Asgn1.c274a587-bbca-4224-ba98-a6cf9d72306f.zip" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1411930682803" subPackages="false" version="1.0"/>
+</session>

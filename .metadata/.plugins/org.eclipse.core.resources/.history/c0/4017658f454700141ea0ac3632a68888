@@ -223,15 +223,10 @@ public class VideoSvcController {
 	}
 
 	/**
-	 * Método que nos permite recuperar la información de video un video
-	 * específico
-	 * 
-	 * @param id
-	 *            Identificador del video
-	 * @param response
-	 *            Respuesta de la petición
-	 * @throws IOException
-	 *             Excepción
+	 * Método que nos permite recuperar la información de video un video específico
+	 * @param id Identificador del video
+	 * @param response Respuesta de la petición 
+	 * @throws IOException Excepción
 	 */
 	@Streaming
 	@RequestMapping(value = VideoSvcApi.VIDEO_DATA_PATH, method = RequestMethod.GET)
@@ -241,16 +236,19 @@ public class VideoSvcController {
 
 		// Comprobamos si existe un video con el identificador expecificado
 		if (videos.get(id) != null) {
-
+			
 			// Si existe, lo recuperamos
 			Video v = videos.get(id);
-
+			
 			// Y copiamos la información del video al flujo de respuesta
 			serveSomeVideo(v, response);
 		} else {
+			
 			// Si no existe, asignamos el valor correspondiente a la respuesta
 			// del procedimiento
 			response.setStatus(HttpServletResponse.SC_NOT_FOUND);
+
 		}
 	}
+
 }

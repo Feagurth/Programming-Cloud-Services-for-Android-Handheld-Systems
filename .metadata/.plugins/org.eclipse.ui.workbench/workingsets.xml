@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411930649225_0" label="Asgn1-VideoUp" name="Asgn1-VideoUp">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Asgn1-VideoUp" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411930872001_1" label="Asgn2-VideoLike" name="Asgn2-VideoLike">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Asgn2-VideoLike" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411930897160_2" label="Window Working Set" name="Aggregate for window 1411930897160"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411933153550_3" label="Window Working Set" name="Aggregate for window 1411933153550"/>
+</workingSetManager>
