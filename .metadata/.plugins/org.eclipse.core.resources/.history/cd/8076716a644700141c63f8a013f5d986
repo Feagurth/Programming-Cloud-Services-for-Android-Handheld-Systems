@@ -37,6 +37,7 @@ public class Video {
 
 	@ElementCollection
 	private Set<String> likesUsernames = new HashSet<>();
+	
 
 	public Video() {
 	}

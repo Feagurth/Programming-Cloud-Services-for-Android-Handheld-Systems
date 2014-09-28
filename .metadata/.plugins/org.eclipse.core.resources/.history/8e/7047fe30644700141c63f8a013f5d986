@@ -20,7 +20,7 @@ package org.magnum.mobilecloud.video;
 
 import java.security.Principal;
 import java.util.Collection;
-import java.util.Set;
+import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -241,8 +241,7 @@ public class VideoSvcController {
 
 		// Recuperamos los nombres de usuario de la gente que ha dado un
 		// "me gusta" al vídeo
-		//List<String> userLikes = v.getLikesUsernames();
-		Set<String> userLikes = v.getLikesUsernames();
+		List<String> userLikes = v.getLikesUsernames();
 
 		// Comprobamos si el usuario no está en la lista de gente que ha dado
 		// un "me gusta" al vídeo. De no estar, no se puede quitar su "me gusta"

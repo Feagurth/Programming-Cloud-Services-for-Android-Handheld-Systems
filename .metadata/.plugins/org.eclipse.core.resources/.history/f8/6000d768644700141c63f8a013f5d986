@@ -37,6 +37,7 @@ public class Video {
 
 	@ElementCollection
 	private Set<String> likesUsernames = new HashSet<>();
+	
 
 	public Video() {
 	}
@@ -88,6 +89,17 @@ public class Video {
 	public void setLikes(long likes) {
 		this.likes = likes;
 	}
+
+	
+	/*
+	public List<String> getLikesUsernames() {
+		return likesUsernames;
+	}
+
+	public void setLikesUsernames(List<String> likesUsernames) {
+		this.likesUsernames = likesUsernames;
+	}
+	*/
 
 	public Set<String> getLikesUsernames() {
 		return likesUsernames;
